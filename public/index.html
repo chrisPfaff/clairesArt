@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+TC"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cedarville+Cursive"
+      rel="stylesheet"
+    />
+
+    <title>Claire's Gallery</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <span class="header__title">
+          <span>C</span> <span>L</span> <span>A</span> <span>I</span>
+          <span>R</span> <span>E</span> <span>'</span> <span>S</span>
+        </span>
+        <p class="header__text">Art Gallery</p>
+      </div>
+    </header>
+    <div id="body" class="body__container"></div>
+  </body>
+  <script>
+    const createDivs = () => {
+      for (var i = 0; i < 10; i++) {
+        const imgDiv = document.createElement("img");
+        imgDiv.setAttribute("src", "https://i.redd.it/9bholalvq2dz.jpg");
+        imgDiv.setAttribute("width", "304");
+        imgDiv.setAttribute("height", "228");
+        imgDiv.setAttribute("alt", "The Pulpit Rock");
+        var element = document.getElementById("body");
+        element.appendChild(imgDiv);
+      }
+    };
+    createDivs();
+  </script>
+</html>

@@ -1,0 +1,30 @@
+.header {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 2s 999999s; }
+
+.header__container {
+  padding: 20px;
+  font-family: "Noto Serif TC", serif;
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center; }
+
+.header__title {
+  color: white;
+  text-shadow: 0 1px black, -1px 0 #cdd2d5, -1px 2px black, -2px 1px #cdd2d5, -2px 3px black, -3px 2px #cdd2d5, -3px 4px black, -4px 3px #cdd2d5, -4px 5px black, -5px 4px #cdd2d5, -5px 6px black, -6px 5px #cdd2d5, -6px 7px black, -7px 6px #cdd2d5, -7px 8px black, -8px 7px #cdd2d5; }
+
+.header__text {
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 22px; }
+
+.header:hover {
+  opacity: 1;
+  transition: opacity 3s; }
+
+.body__container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }

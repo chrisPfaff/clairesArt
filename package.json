@@ -1,0 +1,29 @@
+{
+  "name": "clairesArt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch public -o public",
+    "dev": "nodemon index.js",
+    "build": "npm run scss & npm run dev",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisPfaff/clairesArt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisPfaff/clairesArt/issues"
+  },
+  "homepage": "https://github.com/chrisPfaff/clairesArt#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
