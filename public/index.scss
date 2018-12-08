@@ -31,9 +31,15 @@
   transition: opacity 3s;
 }
 
-.body__container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
+.body {
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__img {
+    margin: 15px;
+    box-shadow: 5px 5px 10px;
+  }
 }

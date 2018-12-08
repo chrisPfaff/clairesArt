@@ -27,4 +27,9 @@
 .body__container {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  align-items: center; }
+
+.body__img {
+  margin: 15px;
+  box-shadow: 5px 5px 10px; }

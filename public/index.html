@@ -29,14 +29,29 @@
     <div id="body" class="body__container"></div>
   </body>
   <script>
+    const artArr = [
+      "/abstract-abstract-expressionism-abstract-painting-1109354.jpg",
+      "/abstract-art-artistic-935785.jpg",
+      "/abstract-art-artistic-990826.jpg",
+      "/abstract-art-board-889839.jpg",
+      "/acrylic-android-wallpaper-art-1012982.jpg",
+      "/adult-art-barren-417040.jpg",
+      "/alarm-clock-art-background-1037993.jpg",
+      "/art-artistic-beautiful-311458.jpg",
+      "/art-creative-creativity-5836.jpg",
+      "/art-creative-design-36759.jpg",
+      "/architecture-art-blue-164455.jpg",
+      "/abstract-acrylic-art-1000366.jpg"
+    ];
     const createDivs = () => {
-      for (var i = 0; i < 10; i++) {
+      for (var i = 0; i < artArr.length; i++) {
         const imgDiv = document.createElement("img");
-        imgDiv.setAttribute("src", "https://i.redd.it/9bholalvq2dz.jpg");
+        imgDiv.classList.add("body__img");
+        imgDiv.setAttribute("src", `${artArr[i]}`);
         imgDiv.setAttribute("width", "304");
         imgDiv.setAttribute("height", "228");
         imgDiv.setAttribute("alt", "The Pulpit Rock");
-        var element = document.getElementById("body");
+        let element = document.getElementById("body");
         element.appendChild(imgDiv);
       }
     };
