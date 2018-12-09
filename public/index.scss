@@ -64,7 +64,7 @@ a {
   transform: scale(0, 0);
   transition: transform 150ms ease-in-out;
   transform-origin: right;
-  padding: 2em;
+  padding: 1em;
   position: fixed;
   top: 0;
   left: 0;
@@ -82,7 +82,7 @@ a {
 }
 
 .picture-lightbox__content {
-  width: 75%;
+  width: 30%;
   padding: 1em;
   margin: 3em;
   background: black;
