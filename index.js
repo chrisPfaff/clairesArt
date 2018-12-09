@@ -8,6 +8,6 @@ app.use(express.static("public/img"));
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
-app.listen(port, () => {
+app.listen(process.end.PORT || port, () => {
   console.log("server is listening");
 });
