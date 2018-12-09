@@ -38,3 +38,39 @@
 
 a {
   color: inherit; }
+
+.picture-lightbox__img {
+  width: 100%;
+  display: block; }
+
+.picture-lightbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0, 0);
+  transition: transform 150ms ease-in-out;
+  transform-origin: right;
+  padding: 2em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.25);
+  width: 100vw;
+  height: 100vh;
+  z-index: 10; }
+
+.picture-lightbox:target {
+  transform: scale(1, 1);
+  transform-origin: left; }
+
+.picture-lightbox__content {
+  width: 75%;
+  padding: 1em;
+  margin: 3em;
+  background: black;
+  position: relative; }
+
+.picture__lightbox__img {
+  margin-bottom: 1em; }
