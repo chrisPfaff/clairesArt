@@ -38,8 +38,16 @@
     flex-wrap: wrap;
     align-items: center;
   }
-  &__img {
+
+  &__div {
     margin: 15px;
+  }
+
+  &__img {
     box-shadow: 5px 5px 10px;
   }
+}
+
+a {
+  color: inherit;
 }

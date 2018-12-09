@@ -44,17 +44,43 @@
       "/abstract-acrylic-art-1000366.jpg"
     ];
     const createDivs = () => {
-      for (var i = 0; i < artArr.length; i++) {
-        const imgDiv = document.createElement("img");
-        imgDiv.classList.add("body__img");
-        imgDiv.setAttribute("src", `${artArr[i]}`);
-        imgDiv.setAttribute("width", "304");
-        imgDiv.setAttribute("height", "228");
-        imgDiv.setAttribute("alt", "The Pulpit Rock");
+      for (let i = 0; i < artArr.length; i++) {
+        const bodyDiv = document.createElement("div");
+        const img = document.createElement("img");
+        const anchor = document.createElement("a");
+        bodyDiv.classList.add("body__div");
+        img.classList.add("body__img");
+        anchor.setAttribute("href", "#");
+        img.setAttribute("src", `${artArr[i]}`);
+        img.setAttribute("width", "304");
+        img.setAttribute("height", "240");
+        img.setAttribute("alt", "The Pulpit Rock");
         let element = document.getElementById("body");
-        element.appendChild(imgDiv);
+        element.appendChild(bodyDiv);
+        bodyDiv.appendChild(anchor);
+        anchor.appendChild(img);
+      }
+    };
+    const createLightBox = () => {
+      for (let i = 0; i < artArr.length; i++) {
+        const lightBox = document.createElement("div");
+        lightBox.classList.add("picture-lightbox");
+        lightBox.id = `lightbox-${i}`;
+        const lightBoxContent = document.createElement("div");
+        lightBoxContent.classList.add("picture-lightbox__content");
+        const lightBoxImg = document.createElement("img");
+        lightBoxContent.classList.add("picture-lightbox__content");
+        let element = document.getElementById("body");
+        lightBoxImg.setAttribute("src", `${artArr[i]}`);
+        lightBoxImg.setAttribute("width", "304");
+        lightBoxImg.setAttribute("height", "240");
+        lightBoxImg.setAttribute("alt", "The Pulpit Rock");
+        element.appendChild(lightBox);
+        lightBox.appendChild(lightBoxContent);
+        lightBoxContent.appendChild(lightBoxImg);
       }
     };
     createDivs();
+    createLightBox();
   </script>
 </html>

@@ -30,6 +30,11 @@
   flex-wrap: wrap;
   align-items: center; }
 
+.body__div {
+  margin: 15px; }
+
 .body__img {
-  margin: 15px;
   box-shadow: 5px 5px 10px; }
+
+a {
+  color: inherit; }
